@@ -1,29 +1,200 @@
-/* You can add global styles to this file, and also import other style files */
-body{
-    background: #E5E5E5;
-};
-
-/* back icon */
-.back-icon{
-/* Icon */
-position: absolute;
-left: 3.75%;
-right: 94.86%;
-top: 2.99%;
-bottom: 95.57%;
-/* Gray 1 */
-background: #333333;
-};
-
-/* Rectangle 4 */
-.rectangle-4{
-position: absolute;
-width: 821px;
-height: 820px;
-left: 151px;
-top: 131px;
-
-background: #FFFFFF;
-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
-border-radius: 4px;
-}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    word-break: break-word;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background: #e5e5e5;
+    font-family: Salesforce Sans;
+    padding: 13rem 0;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    line-height: 1;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .row {
+    width: 90%;
+    max-width: 114rem;
+    margin: 0 auto;
+  }
+  
+  .group {
+    padding: 1.5rem 0;
+  }
+  .group:not(:last-of-type) {
+    border-bottom: 1px solid #dddbda;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .back {
+    position: fixed;
+    top: 3.3rem;
+    left: 5.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    font-family: Salesforce Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #000000;
+  }
+  
+  .main {
+    display: grid;
+    grid-template-columns: 0.75fr 0.25fr;
+    gap: 1.8rem;
+  }
+  .main__left, .main__summary {
+    background: #ffffff;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+  }
+  .main__left {
+    padding: 7rem 6rem;
+  }
+  .main__left h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.6rem;
+  }
+  .main__left p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.7rem;
+    max-width: 68rem;
+  }
+  .main__left small {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    color: #706e6b;
+    display: block;
+    margin-bottom: 1.4rem;
+  }
+  .main__left .select {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .main__left .select label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .main__left .select select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url("/images/down-arrow.svg");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    min-width: 5rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #706e6b;
+    border: 1px solid #c4c4c4;
+    outline: none;
+    border-radius: 4px;
+    padding: 0.6rem 1.2rem;
+  }
+  .main__right {
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+  }
+  .main__summary {
+    padding: 3.9rem 3.2rem;
+    font-style: normal;
+    font-family: Salesforce Sans;
+    color: #000000;
+  }
+  .main__summary h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .main__summary h3 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .main__summary p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+  .main__summary .promo {
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    color: #0070d2;
+    cursor: pointer;
+  }
+  .main__btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    background: #0eb58a;
+    border-radius: 6px;
+    font-family: Salesforce Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: #ffffff;
+    padding: 1em 2em;
+    width: 100%;
+  }
+  @media only screen and (max-width: 56.25em) {
+    .main {
+      grid-template-columns: 0.65fr 0.35fr;
+    }
+    .main__left {
+      padding: 3.5rem 3rem;
+    }
+    .main__summary {
+      padding: 2.9rem 2.2rem;
+    }
+  }
+  @media only screen and (max-width: 35.7em) {
+    .main {
+      grid-template-columns: 1fr;
+    }
+  }/*# sourceMappingURL=style.css.map */
