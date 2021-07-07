@@ -18,35 +18,118 @@
   </div>
 
   <div class="main row">
-    <div class="main__left">
+    <div >
+      <div class="stepper-wrapper">
+        <div class="stepper-item completed">
+          <div class="step-counter"></div>
+          <div class="step-name">Tickets</div>
+        </div>
+        <div class="stepper-item completed">
+          <div class="step-counter"></div>
+          <div class="step-name">Sessions</div>
+        </div>
+        <div class="stepper-item active">
+          <div class="step-counter"></div>
+          <div class="step-name">Payment</div>
+        </div>
+      </div>
+    <div class="main__left"> 
       <div class="group">
         <h2>Free Ticket</h2>
-        <p>
-          Free ticket for anyone to make a valuable contribution towards our
-          future online events programme. Thank you.
-        </p>
-        <small>Sales end in 1 hour</small>
-        <div class="select">
-          <label for="tickets">Free</label>
-          <select id="tickets">
-            <option value="0">0</option>
-          </select>
-        </div>
       </div>
+    </div>
+    <div class="main_left_card">
+      <div class="up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+          <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/>
+        </svg>
+      </div>
+      <h2>Attendee 1 - Free Ticket</h2>
       <div class="group">
-        <h2>Alumni VIP Ticket</h2>
-        <p>
-          This livestream will broadcast via a private YouTube link that will
-          be sent to ticket purchasers an hour prior to showtime
-        </p>
-        <small>Sales end in 5 days</small>
-        <div class="select">
-          <label for="tickets">$3,500.00</label>
-          <select id="tickets">
-            <option value="2">2</option>
-          </select>
+        <div class="form-row">
+          <div class="col-6 mr-10">
+            <input class="form-input" type="text" placeholder="First Name*">
+          </div>
+          <div class="col-6"><input class="form-input" type="text" placeholder="Last Name*"/></div>
         </div>
+        <div class="col-12 mt-7"><input class="form-input" type="email" placeholder="Email*"/></div>
+       
       </div>
+     
+        <h5>Would you like to receive the branded connections and other e-communications from the us?</h5>
+        <ul>
+          <li>
+            <input type="radio" name="option" id="yes" value="Yes">
+            <label for="yes">Yes</label>
+          </li>
+          <li>
+            <input type="radio" name="option" id="no" value="No">
+            <label for="no">No</label>
+            
+          </li>
+        </ul>  
+    </div>
+    <div class="main_left_card">
+      <div class="up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+          <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/>
+        </svg>
+      </div>
+      <h2>Attendee 2 - Alumni VIP Ticket</h2>
+      <div class="group">
+        <div class="form-row">
+          <div class="col-6 mr-10">
+            <input class="form-input-1" type="text" placeholder="First Name*">
+          </div>
+          <div class="col-6"><input class="form-input-1" type="text" placeholder="Last Name*"/></div>
+        </div>
+        <div class="col-12 mt-7"><input class="form-input-1" type="email" placeholder="Email*"/></div>
+        <div class="col-12 mt-7"><input class="form-input-1" type="text" placeholder="Job Title*"/></div>
+        <div class="col-12 mt-7"><input class="form-input-1" type="text" placeholder="Company*"/></div>
+        <div class="col-12 mt-7">
+          <select class="form-input-1">
+          <option value="United States">United States</option>
+          <option value="Andorra">Andorra</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Nigeria">Nigeria</option>
+        </select>
+      </div>
+
+       
+      </div>
+    </div>
+    <div class="main_left_card">
+      <div class="up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="none" d="M0 0h24v24H0V0z"/>
+          <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/>
+        </svg>
+      </div>
+      <h2>Attendee 3 - Alumni VIP Ticket</h2>
+      <div class="group">
+        <div class="form-row">
+          <div class="col-6 mr-10">
+            <input class="form-input-1" type="text" placeholder="First Name*">
+          </div>
+          <div class="col-6"><input class="form-input-1" type="text" placeholder="Last Name*"/></div>
+        </div>
+        <div class="col-12 mt-7"><input class="form-input-1" type="email" placeholder="Email*"/></div>
+        <div class="col-12 mt-7"><input class="form-input-1" type="text" placeholder="Job Title*"/></div>
+        <div class="col-12 mt-7"><input class="form-input-1" type="text" placeholder="Company*"/></div>
+        <div class="col-12 mt-7">
+          <select class="form-input-1">
+          <option value="United States">United States</option>
+          <option value="Andorra">Andorra</option>
+          <option value="Belgium">Belgium</option>
+          <option value="Nigeria">Nigeria</option>
+        </select>
+      </div>
+
+       
+      </div>
+    </div>
     </div>
     <div class="main__right">
       <div class="main__summary">
@@ -78,6 +161,6 @@
         </div>
         <p class="promo">Have a promo code?</p>
       </div>
-      <button class="main__btn">Checkout</button>
+      <button class="main__btn">Review Sessions</button>
     </div>
   </div>
